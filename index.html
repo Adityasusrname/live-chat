@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Live-Chat
+        </title>
+     <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+      
+        <div class="main-div">
+            <div>
+               
+                <div class="chat" id="chat"> 
+
+                </div>
+                <input type="text" class="text" id="message"/>
+                <input type="button" value="Send" id="send"/>
+                <br/>
+                <input type="text" class="text" id="room"/>
+                <input type="button" value="Join" id="join"/>
+            </div>
+        </div>
+        <script defer src="http://localhost:3238/socket.io/socket.io.js"></script>
+        <script  defer src="client.js" type="module"></script>
+    </body>
+</html>
